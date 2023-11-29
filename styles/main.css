@@ -39,7 +39,7 @@ img {
     border-width: 5px;
 }
 
-.mainComponent {
+.fishCard {
     flex-basis: 30%;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 16pt;
