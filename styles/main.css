@@ -1,0 +1,85 @@
+head {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+}
+
+body {
+    background-color: bisque;
+}
+
+.pageHeader {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 22pt;
+    font-weight: bolder;
+}
+
+aside {
+    display: block;
+    width: 25%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #103344;
+    font-style: italic;
+    font-size: 9pt;
+    color: #00090e;
+}
+
+aside >article {
+       margin: 0.5rem;
+}
+
+img {
+    width: 100px;
+    height: 80px;
+    display: flexbox;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
+}
+
+.mainComponent {
+    flex-basis: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    display: flex;
+    max-width: 62%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fishName {
+    font-weight: bolder;
+    text-align: center;
+}
+
+.fishBasicInfo {
+    flex-basis: 30%;
+    width: 6cm;
+    border-style: dashed;
+    border-color: #103344;
+    border-width: 1pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10pt;
+    padding: 5px;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.fishDetails {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 7pt;
+    padding: 5px;
+    text-align: left;
+    }
+
+.harvestLocations {
+    flex-basis: 30%;
+    width: 300px;
+    border-style: dashed;
+    border-color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12pt;
+    margin-top: 10px;
+}
