@@ -3,16 +3,16 @@ import { getFish } from "./database.js"
 
 export const FishList = () => {
     // Invoke the function that you imported from the database module
-    const fishes = getFish()
+    const fishes = getFish();
 
     // Start building a string filled with HTML syntax
-    const htmlString = '<article class="fishList">'
+    let htmlString = '<article class="fishList">';
 
     // Create HTNL representations of each fish here
     for (const fish of fishes) {
 
         // Why is there a backtick used for this string?
-        htmlString == `<section class="fishCard">
+        htmlString += `<section class="fishCard">
             <div><img  class="fish__image image--card" src="${fish.image}" /></div>
             <div class="fish__name">${fish.name}</div>
             <div class="fish__type">${fish.type}</div>
@@ -20,10 +20,11 @@ export const FishList = () => {
             <div class="fish__size">${fish.size}</div>
             <div class="fish__harvestLocation">${fish.harvestLocation}</div>
             <div class="fish__diet">${fish.food}</div>
-        </section>
-`
+        </section>`;
     }
-    htmlString == `</article>`
 
-    return htmlString
-}
+    htmlString += `</article>`;
+
+    return htmlString;
+};
+

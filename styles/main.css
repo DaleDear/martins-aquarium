@@ -14,23 +14,43 @@ body {
     font-weight: bolder;
 }
 
-aside {
-    display: block;
-    width: 25%;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
+h2 {
+    flex-basis: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    display: flex;
+    max-width: 62%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-style: dashed;
+    border-color: #103344;
+    border-width: 1pt;      
+}
+
+.aside {
     float: right;
+    display: block;
+    float: 30%;
+    width: 30%;
+    margin-left: 20px;
     box-shadow: inset 5px 0 5px -5px #103344;
     font-style: italic;
     font-size: 9pt;
     color: #00090e;
+    padding-left: 10px;
+    
 }
 
-aside >article {
-       margin: 0.5rem;
+.img {
+    width: 100px;
+    height: 80px;
+    display: flexbox;
+    border-color: black;
+    border-style: solid;
+    border-width: 5px;
 }
 
-img {
+.fish__image {
     width: 100px;
     height: 80px;
     display: flexbox;
@@ -47,6 +67,22 @@ img {
     max-width: 62%;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    border-style: dashed;
+    border-color: #103344;
+    border-width: 1pt;
+}
+
+.Fish_CardDiv {
+    flex-basis: 30%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16pt;
+    display: flex;
+    max-width: 62%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-style: dashed;
+    border-color: #103344;
+    border-width: 1pt;
 }
 
 .fishName {
@@ -54,7 +90,7 @@ img {
     text-align: center;
 }
 
-.fishBasicInfo {
+#fishList {
     flex-basis: 30%;
     width: 6cm;
     border-style: dashed;
